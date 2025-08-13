@@ -38,8 +38,8 @@
     {"tag": "🇰🇷 韩国节点", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇰🇷|KR|kr|韩国|韩|Korea"]}]},
     {"tag": "🇸🇬 新加坡节点", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}]},
     {"tag": "🇺🇲 美国节点", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|America|United States"]}]},
-    {"tag": "🟢 直连", "type": "direct"}
-    {"tag": "GLOBAL", "type": "urltest", "outbounds": ["{all}"], "interval": "5m", "tolerance": 10},
+    {"tag": "🟢 直连", "type": "direct"},
+    {"tag": "GLOBAL", "type": "urltest", "outbounds": ["{all}"], "interval": "5m", "tolerance": 10}
   ],
   "route": {
     "rules": [
