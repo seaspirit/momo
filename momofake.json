@@ -42,13 +42,15 @@
   ],
   "route": {
     "rules": [
-      {"domain": ["www.youtube.com", "www.google.com"], "outbound": "🇺🇲 美国节点"},
+      {"domain": "www.youtube.com", "outbound": "🇺🇲 美国节点"},
+      {"domain": "www.google.com", "outbound": "🇺🇲 美国节点"},
       {"rule_set": "geosite-google-play", "outbound": "🇭🇰 香港节点"},
-      {"domain_suffix": ["jp", "postimg.cc"], "outbound": "🇯🇵 日本节点"},
+      {"domain_suffix": "jp", "outbound": "🇯🇵 日本节点"},
       {"domain_suffix": "tw", "outbound": "🇹🇼 台湾节点"},
       {"domain_suffix": "us", "outbound": "🇺🇲 美国节点"},
       {"domain_suffix": "qnap.com", "outbound": "🟢 直连"},
       {"domain_suffix": "softonic.cn", "outbound": "♻️ 自动选择"},
+      {"domain_suffix": "postimg.cc", "outbound": "🇯🇵 日本节点"},
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "🟢 直连"},
